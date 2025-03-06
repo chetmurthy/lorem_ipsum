@@ -1,0 +1,6 @@
+lorem_ipsum 0.01`: An OCaml library to generate Lorem Ipsum text
+================================================================
+:toc:
+:toc-placement: preamble
+
+what it says on the tin.

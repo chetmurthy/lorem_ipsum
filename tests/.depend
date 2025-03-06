@@ -1,0 +1,3 @@
+lorem_ipsum_test.cmo lorem_ipsum_test.cmi lorem_ipsum_test.cmx: ../local-install/lib/lorem_ipsum/META
+lorem_ipsum_test.cmo :
+lorem_ipsum_test.cmx :

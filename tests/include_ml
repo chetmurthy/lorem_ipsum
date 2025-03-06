@@ -1,0 +1,45 @@
+#use "topfind.camlp5";;
+#require "compiler-libs.common" ;;
+#require "camlp-streams";;
+#require "oUnit";;
+#require "fmt";;
+#require "rresult";;
+#require "bos";;
+#require "pcre2";;
+#require "re";;
+#require "str";;
+
+#require "camlp5.pa_op";;
+Pcaml.inter_phrases := Some ";;\n";;
+(*
+#require "camlp5.pa_r";;
+Pcaml.inter_phrases := Some ";\n";;
+ *)
+
+#require "camlp5.pr_o";;
+
+(*
+#require "camlp5.pr_r";;
+Pcaml.inter_phrases := Some ";\n";;
+ *)
+
+
+(*
+;;; Local Variables: ***
+;;; mode:tuareg ***
+;;; End: ***
+
+*)
+
+#require "pa_ppx.testutils";;
+#require "pa_ppx.utils";;
+#require "pa_ppx.runtime";;
+#require "pa_ppx.runtime_fat";;
+open Pa_ppx_utils ;;
+open Pa_ppx_testutils.Papr_util ;;
+(*
+Pa_ppx_runtime.Exceptions.Ploc.pp_loc_verbose := false ;;
+Pa_ppx_runtime_fat.Exceptions.Ploc.pp_loc_verbose := false ;;
+#install_printer Pa_ppx_runtime.Exceptions.Ploc.pp;;
+ *)
+

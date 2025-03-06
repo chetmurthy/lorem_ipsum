@@ -7,7 +7,7 @@ include $(TOP)/config/Makefile.sub
 
 DESTDIR=
 
-PACKAGES := $(PACKAGES),fmt,pcre2,str,pa_ppx.base,pa_ppx.utils,pa_ppx.deriving_plugins.std,pa_ppx_regexp,markup
+PACKAGES := $(PACKAGES),fmt,pcre2,str,pa_ppx.base,pa_ppx.utils,pa_ppx_regexp
 TARGET_PACKAGE = lorem_ipsum
 TARGET = $(TARGET_PACKAGE).cma
 ML = greek.ml generate.ml

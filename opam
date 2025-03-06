@@ -23,8 +23,6 @@ depends: [
   "not-ocamlfind" { >= "0.13" }
   "ounit" { >= "2.2.7" }
   "fmt"
-  "mdx" { >= "2.3.0" & with-test}
-  "pp-binary-ints" {with-test}
   "pa_ppx_regexp" { >= "0.04" }
 ]
 build: [

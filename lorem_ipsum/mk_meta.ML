@@ -14,22 +14,15 @@ Arg.(parse [
 
 Fmt.(pf stdout {|
 # Specifications for the "lorem_ipsum" library:
-requires = "pcre2,camlp5,fmt,pa_ppx.base,pa_ppx.utils,lorem_ipsum_runtime,camlp5.parser_quotations,pa_ppx_regexp.runtime,sedlex,markup"
+requires = "pcre2,camlp5,fmt,pa_ppx.base,pa_ppx.utils,lorem_ipsum_runtime,pa_ppx_regexp.runtime"
 version = "%s"
 description = "lorem_ipsum: lorem_ipsum library"
-
-# For linking
-package "link" (
-requires = "camlp5,fmt,pa_ppx.base.link,pa_ppx.utils,camlp5.parser_quotations.link,pa_ppx_regexp.runtime,sedlex,markup"
-archive(byte) = "lorem_ipsum.cma"
-archive(native) = "lorem_ipsum.cmxa"
-)
 
 # For the toploop:
 archive(byte,toploop) = "lorem_ipsum.cma"
 
   # For the preprocessor itself:
-  requires(syntax,preprocessor) = "camlp5,fmt,pa_ppx.base,pa_ppx.utils,camlp5.parser_quotations,pa_ppx_regexp.runtime,sedlex,markup"
+  requires(syntax,preprocessor) = "camlp5,fmt,pa_ppx.base,pa_ppx.utils,pa_ppx_regexp.runtime"
   archive(syntax,preprocessor,-native) = "lorem_ipsum.cma"
   archive(syntax,preprocessor,native) = "lorem_ipsum.cmxa"
 

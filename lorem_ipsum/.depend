@@ -1,3 +1,5 @@
-generate.cmo generate.cmi generate.cmx: 
+greek.cmo generate.cmo greek.cmi generate.cmi greek.cmx generate.cmx: 
+greek.cmo :
+greek.cmx :
 generate.cmo :
 generate.cmx :

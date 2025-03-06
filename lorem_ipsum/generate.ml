@@ -56,7 +56,7 @@ let generate_sentence t =
       |> Std.stream_of_list
       |> Std.stream_concat_map (fun w ->
              [< (let word = random_get words in
-                 if w = 0 then
+                 if w = 1 then
                    [< 'String.capitalize_ascii word >]
                  else
                    [< '" " ; 'word >]) ;
